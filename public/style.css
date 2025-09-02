@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 350;
+    letter-spacing: 0.07vw;
+    scroll-behavior: smooth;
+}
+
+.game {
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    display: block;
+    background-color: #fffcef;
+    height: 87.5vh;
+    padding: 1rem 5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    cursor: default;
+    text-align: center;
+}
+
+#board {
+    background-image: url(images/flappybirdbg.png);
+    border: 3px solid #595f91;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 4vh;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+    justify-self: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: #040618;
+}
+
+.navbar__homeText {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: #9292b1;
+    text-decoration: none;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.footer__container {
+    background-color: #fffcef;
+    padding: 0.75rem 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: end;
+}
+
+.footer__items--text {
+    display: block;
+}
+
+.footer__item--text p {
+    color: #191b28;
+    font-size: 0.65rem;
+    text-align: center;
+}
+
+.footer__item--email button {
+    font-size: 0.75rem;
+    background-color: transparent;
+    padding: 9px 21px;
+    border: 1.5px solid #2c3268;
+    border-radius: 25px;
+    margin-top: 1rem;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.footer__item--email button a {
+    position: relative;
+    color: #2c3268;
+    text-decoration: none;
+}
+
+.footer__item--socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer__item--socials button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.footer__item--socials button a {
+    font-size: 0.75rem;
+    color: #040618;
+    text-decoration: none;
+}
