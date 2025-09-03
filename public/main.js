@@ -60,12 +60,15 @@ window.onload = function() {
     birdImg.src = "images/flappybird.png";
     birdImg.onload = function() {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
+        console.log('Bird path:', birdImg.src);
     }
 
     topPipeImg = new Image();
     topPipeImg.src = "images/toppipe.png";
     bottomPipeImg = new Image();
     bottomPipeImg.src = "images/bottompipe.png";
+    console.log('Top Pipe path:', topPipeImg.src);
+    console.log('Bottom Pipe path:', bottomPipeImg.src);
 
     requestAnimationFrame(update);
     pipeInterval = setInterval(placePipes, levelInterval);
