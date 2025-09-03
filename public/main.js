@@ -57,7 +57,7 @@ window.onload = function() {
 
     // load images
     birdImg = new Image();
-    birdImg.src = "images/flappybird.png";
+    birdImg.src = "/images/flappybird.png";
     birdImg.onload = function() {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
         console.log('Bird path:', birdImg.src);
